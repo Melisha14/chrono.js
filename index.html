@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Chrono</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+
+    <div id="time"></div> <br>
+
+
+	<form name="parametre" action="" method="">
+        <input type="button" name="lance"  value="start" onclick="chrono();debut();">
+        <input type="button" name="pause"  value="Stop" onclick="arret();">
+        <input type="button" name="intermediaire"  value="lap" onclick="inter();"> <br><br>
+        <input type="button" name="rappel"  value="reset" onclick="rappeler();">
+    </form>
+
+
+	<div id="presenter">
+        <p>Lap : </p>
+        <span id="interm"></span>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
